@@ -1,0 +1,129 @@
+*
+{
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab);
+  background-size: 350% 350%;
+  min-height: 100vh;
+  animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("https://st3.depositphotos.com/11601342/19037/v/1600/depositphotos_190372724-stock-illustration-vector-drink-pattern-drink-seamless.jpg");
+  width: 730px;
+  height: 730px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  margin: 20px;
+}
+
+.logo-txt {
+  font-size: 58px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.loginBrand{
+  width:400px;
+}
+
+.companyBrand{
+  width:80px;
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+.developedbyText{
+  font-family:"Poppins";
+  margin: 0 auto;
+  vertical-align: middle;
+}
+.developerSignature{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .loginBrand{
+    width:320px;
+  
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f7ff;
+    width: 450px;
+    height: 570px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+  }
+
+  .logo {
+    margin: 10px 10px 0px 10px;
+  }
+  
+  .logo-txt {
+    font-size: 38px;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .loginBrand{
+    width:230px;
+  
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f7ff;
+    width: 330px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 10px;
+  }
+
+  .logo {
+    margin: 10px 10px 0px 10px;
+  }
+  
+  .logo-txt {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+}

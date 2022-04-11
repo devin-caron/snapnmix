@@ -1,0 +1,303 @@
+*
+{
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* .searchFormControl { 
+    width:100%;
+    margin-top: 3px;
+    border-color:rgba(255, 68, 0, 0);
+    text-indent:12px;
+    font-size:20px;
+    font-family:'Lato';
+    opacity:35%;
+}
+
+.searchFormControl:focus {
+    outline:none;
+} */
+
+.searchFormControl { 
+    width:100%;
+    margin: 0px;
+    border-bottom: 1px solid rgba(223, 223, 223, 0.493);
+    text-indent:12px;
+    font-size:25px;
+    font-family:'Poppins';
+    opacity:35%;
+}
+
+.searchFormControl{
+    border-color:rgba(170, 136, 136, 0);
+}
+
+.search-box{
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin: 10px;
+    margin-bottom: 0;
+  }
+
+  .input-search {
+    height: 50px;
+    width: 50px;
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background-color: #fe4f81;
+    padding-right: 40px;
+    color:black;
+  }
+  .input-search::placeholder{
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  .btn-search{
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color:white ;
+    background-color:transparent;
+    pointer-events: painted;
+    pointer-events: none;
+  }
+  .btn-search:focus ~ .input-search{
+    width: 350px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid #fe4f81;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .input-search:focus{
+    width: 350px;
+    border-radius: 0px;
+    background-color: transparent;
+    border-bottom:1px solid #fe4f81;
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+
+.cocktailSearchList {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:100vw;
+}
+
+.cocktailAllLists{
+    user-select:none;
+    padding:0;
+    height:100%;
+    overflow:hidden;
+    width:100%;
+}
+
+.cocktailList {
+    height:800px;
+    overflow:auto;
+    margin-right: 5%;
+    width:100vw;
+}
+
+.cocktailPopularList {
+    padding:0;
+    width:100vw;
+    height:300px;
+    display:flex;
+    overflow:auto;
+    padding-bottom:20px
+}
+
+.cocktailCategoryList {
+    padding:0;
+    width:100vw;
+    display:flex;
+    overflow:auto;
+    padding-bottom:20px;
+}
+
+.cocktailLatestList {
+    padding:0;
+    width:100vw;
+    height:300px;
+    display:flex;
+    overflow:auto;
+    padding-bottom:20px
+}
+
+.cocktailFavouriteList {
+    padding:0;
+    width:100vw;
+    height:300px;
+    display:flex;
+    overflow:auto;
+    padding-bottom:20px;
+}
+
+.listHeader{
+    background-image:linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("https://st3.depositphotos.com/11601342/19037/v/1600/depositphotos_190372724-stock-illustration-vector-drink-pattern-drink-seamless.jpg");
+    font-size:30px;
+    border-top: 1px solid rgba(223, 223, 223, 0.493);
+    border-bottom: 1px solid rgba(223, 223, 223, 0.493);
+    text-indent:7px;
+    padding: 7px;
+    width:100vw;
+}
+
+.listDiv{
+    position:relative;
+    display:flex;
+    flex-direction:row;
+}
+
+.arrowListLeftScroll{
+    position:absolute;
+    left:0px;
+    width:80px;
+    height:305px;
+    background-color:rgba(240, 248, 255, 0);
+    border-color:rgba(255, 255, 255, 0);
+}
+
+.arrowListLeftScroll:hover{
+    font-size:50px;
+    background-color:rgba(255, 255, 255, 0.094);
+    background-size:350%;
+    border-color:rgba(255, 255, 255, 0);
+}
+
+.arrowListRightScroll{
+    position:absolute;
+    right:0px;
+    width:80px;
+    height:305px;
+    background-color:rgba(240, 248, 255, 0);
+    border-color:rgba(255, 255, 255, 0);
+}
+
+.arrowListRightScroll:hover{
+    font-size:50px;
+    background-color:rgba(255, 255, 255, 0.094);
+    background-size:350%;
+    border-color:rgba(255, 255, 255, 0);
+}
+
+
+
+ul::-webkit-scrollbar{
+    height:8px;
+    width:8px;
+  }
+  
+  ul::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.094);
+
+  }
+
+  ul::-webkit-scrollbar-track{
+    background-color: rgba(236, 236, 236, 0.091);
+  }
+@media screen and (max-width: 960px) {
+    .searchFormControl { 
+        width:100%;
+        margin: 0px;
+        border-bottom: 1px solid rgba(223, 223, 223, 0.493);
+        text-indent:12px;
+        font-size:20px;
+        font-family:'Lato';
+        opacity:35%;
+    }
+    
+    .searchFormControl:focus {
+        outline:none;
+    }
+    
+    .cocktailSearchList {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        width:100vw;
+    }
+    
+    .cocktailAllLists {
+        padding:0;
+        height:100%;
+        overflow:auto;
+        width:100%;
+        margin: 0;
+    }
+    
+    .cocktailList {
+        height:800px;
+        overflow:auto;
+        margin-right: 5%;
+        width:100vw;
+    }
+    
+    .cocktailPopularList {
+        padding:0;
+        width:100vw;
+        height:auto;
+        display:flex;
+        overflow:auto;
+    }
+    
+    .cocktailCategoryList {
+        padding:0;
+        width:100vw;
+        display:flex;
+        overflow:auto;
+        padding-bottom:20px
+    }
+
+    .cocktailLatestList {
+        padding:0;
+        width:100vw;
+        height:auto;
+        display:flex;
+        overflow:auto;
+    }
+
+    .cocktailFavouriteList {
+        padding:0;
+        width:100vw;
+        height:auto;
+        display:flex;
+        overflow:auto;
+        margin-bottom: 25px;
+    }
+    
+    .listHeader{
+        font-size:25px;
+        border-top: 1px solid rgba(223, 223, 223, 0.493);
+        border-bottom: 1px solid rgba(223, 223, 223, 0.493);
+        text-indent:7px;
+        padding: 7px;
+        width:100vw;
+    }
+
+    .arrowListLeftScroll{
+        visibility:hidden;
+    }
+    .arrowListRightScroll{
+        visibility:hidden;
+    }
+}

@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+
+.accountPageContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#ddecf1, #da20ab);
+  background-size: 350% 350%;
+  height: 95vh;
+}
+
+/* background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab); */
+.accountForm {
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url("https://st3.depositphotos.com/11601342/19037/v/1600/depositphotos_190372724-stock-illustration-vector-drink-pattern-drink-seamless.jpg");
+  width: 50vw;
+  height: 530px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-shadow: 4px 4px 30px rgba(0, 0, 0, 0.219);
+}
+
+.accountFormUserName {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #19d1a9);
+  background-size: 350% 350%;
+  animation: gradient 20s ease infinite;
+  height: 250px;
+  color: white;
+}
+
+.accountFormHeader {
+  font-weight: bold;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.accountFormEmail {
+  font-size: 1.2rem;
+}
+
+.accountUserStatsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.accountStatBox_favourited,
+.accountStatBox_created {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  height: 80px;
+  width: 280px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background: white;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+}
+
+.accountStatBox_favourited {
+  margin-right: 20px;
+  margin-top: 40px;
+}
+
+.accountStatBox_created {
+  margin-left: 20px;
+  margin-top: 40px;
+}
+
+.accountStatCount_favourited,
+.accountStatCount_created {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  font-style: normal;
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  margin-right: auto;
+  width: 60px;
+}
+
+.accountStatCount_favourited,
+.accountStat_favourited_outline {
+  /* background-image: radial-gradient(
+    circle 830px at 95.6% -5%,
+    rgba(244, 89, 128, 1) 0%,
+    rgba(223, 23, 55, 1) 90%
+  ); */
+  background-image: linear-gradient(to top, #209cff 0%, #68e0cf 100%);
+  background-size: 350% 350%;
+  animation: gradient 20s ease infinite;
+}
+
+.accountStatCount_created,
+.accountStat_created_outline {
+  /* background-image: linear-gradient(
+    83.2deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  ); */
+  background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+  background-size: 350% 350%;
+  animation: gradient 20s ease infinite;
+}
+
+.accountStat_favourited_outline,
+.accountStat_created_outline {
+  width: 5px;
+  height: 100%;
+  margin-left: auto;
+}
+
+.btn-logOutButton {
+  margin-top: 50px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 18px;
+  background-color: #fe4f81 !important;
+  color: white !important;
+  font-weight: bold !important;
+  width: 100px;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4);
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 910px) {
+  .accountStatBox {
+    margin: 20px;
+    height: 80px;
+    width: 250px;
+    font-size: 1rem;
+  }
+
+  .accountStatBox_favourited,
+  .accountStatBox_created  {
+    font-size: 1rem;
+  }
+
+  .accountForm {
+    width: 84vw;
+    height: 530px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .accountStatBox_favourited,
+  .accountStatBox_created {
+    margin: 20px;
+    height: 60px;
+    width: 65%;
+    font-size: 1rem;
+  }
+
+  .accountForm {
+    width: 84vw;
+    height: 530px;
+  }
+
+  .accountUserStatsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btn-logOutButton {
+    margin-top: 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .accountForm {
+    width: 84vw;
+    height: 530px;
+  }
+
+  .accountFormEmail {
+    font-size: 0.9rem;
+  }
+
+  .accountStatBox_favourited,
+  .accountStatBox_created {
+    margin: 20px;
+    height: 60px;
+    width: 80%;
+    font-size: 1rem;
+  }
+}

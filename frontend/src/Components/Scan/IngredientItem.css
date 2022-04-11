@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+
+.ingredient {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  height: 65px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.ingredient_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+  background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab);
+  background-size: 350% 350%;
+  animation: gradient 12s ease infinite;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 660px) {
+  .ingredient {
+    font-size: 1.2rem;
+    height: 65px;
+    border-radius: 4px;
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .ingredient {
+    height: 55px;
+  }
+}

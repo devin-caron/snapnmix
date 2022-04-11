@@ -1,0 +1,104 @@
+.myBarContainer{
+    text-align:center;
+    height:95vh;
+    user-select: none;
+}
+
+.myBarContainer ul{
+    background-color:white;
+}
+
+.myBarContainer h5{
+    text-align:left;
+}
+
+.listHeaderCustomDrinks{
+    background-image:linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("https://st3.depositphotos.com/11601342/19037/v/1600/depositphotos_190372724-stock-illustration-vector-drink-pattern-drink-seamless.jpg");
+    font-size:30px;
+    border-top: 1px solid rgba(223, 223, 223, 0.493);
+    border-bottom: 1px solid rgba(223, 223, 223, 0.493);
+    text-indent:7px;
+    padding: 7px;
+    margin:0;
+    width:100vw;
+}
+
+.customDrinkButtonDiv{
+    width:100vw;
+}
+
+.createNewMixButton{
+    background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab);
+    background-size: 350% 350%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    animation: gradient 12s ease infinite;
+    border-color:rgba(199, 199, 199, 0.281);
+    border-radius:20px;
+    color: rgb(255, 255, 255);
+    width:110px;
+    height:110px;
+}
+
+.createNewMixButton ion-icon{
+    font-size:48px;
+    margin-top: 6px;
+}
+
+.cocktailCustomList{
+    padding: 0;
+    height:300px;
+    width:100vw;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    overflow:auto;
+}
+
+.cocktailCustomCommunityList{
+    padding: 0;
+    height:300px;
+    width:100vw;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    overflow:auto;
+}
+
+@media screen and (max-width: 991px) {
+    .listHeaderCustomDrinks {
+        font-size: 20px;
+    }
+
+    .myBarContainer{
+        text-align:center;
+        height:auto;
+    }
+
+    .customDrinkButtonDiv{
+        margin-top: 40px;
+        padding: 0;
+        height: auto;
+    }    
+
+    
+    .cocktailCustomList{
+        height:auto;
+    }
+
+    .cocktailCustomCommunityList{
+        height:auto;
+    }
+    
+    .createNewMixButton{
+        background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab);
+        background-size: 350% 350%;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 3px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        animation: gradient 12s ease infinite;
+        border-color:rgba(199, 199, 199, 0.281);
+        border-radius:20px;
+        color: rgb(255, 255, 255);
+        width:80px;
+        height:80px;
+    }
+}
+

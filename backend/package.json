@@ -1,0 +1,37 @@
+{
+  "name": "authentication-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node index.js",
+    "heroku-postbuild": "npm run install-client && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google-cloud/vision": "^2.4.2",
+    "@hapi/joi": "^17.1.1",
+    "axios": "^0.25.0",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "fs": "^0.0.1-security",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mathjs": "^10.3.0",
+    "mime": "^3.0.0",
+    "mongoose": "^6.2.1",
+    "request": "^2.88.2",
+    "string-similarity": "^4.0.4"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
+  }
+}

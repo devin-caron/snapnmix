@@ -1,0 +1,411 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+
+.cocktail_scan_List {
+  padding-left: 0px;
+}
+
+.display_btn_container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.display_btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  width: 160px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.display_btn::before {
+  content: "";
+  background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab);
+  background-size: 350% 350%;
+  animation: gradient 12s ease infinite;
+  border-radius: 15px;
+  width: 110%;
+  height: 120%;
+  top: -10%;
+  right: -5%;
+  position: absolute;
+  z-index: -1;
+  transition: 0.2s;
+}
+
+.display_btn:hover::before {
+  width: 90%;
+  height: 90%;
+  right: 3.5%;
+  top: 20%;
+}
+
+.display_btn_text {
+  background-color: #121212;
+  background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab);
+  background-size: 350% 350%;
+  animation: gradient 12s ease infinite;
+
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.ingredient_searchbar,
+.search_Ingredient_Item,
+.ingredient_divider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.ingredient_list,
+.ingredientAdd_list {
+  display: inline-block;
+  padding-left: 0;
+  overflow: auto;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.ingredient_divider_text,
+.ingredient_divider_text_BORDERLESS {
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  position: relative;
+  color: rgb(94, 93, 93);
+  margin-top: 112px;
+}
+
+.ingredient_divider_text::before,
+.ingredient_divider_text_BORDERLESS::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: rgb(94, 93, 93);
+  position: absolute;
+  left: 62%;
+  top: 52%;
+}
+
+.ingredient_divider_text::after,
+.ingredient_divider_text_BORDERLESS::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: rgb(94, 93, 93);
+  position: absolute;
+  right: 62%;
+  top: 52%;
+}
+
+.ingredient_SearchForm_Control {
+  width: 100vw;
+  margin: 5px;
+  border: none;
+  color: #0f0f0f;
+  text-indent: 12px;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Lato";
+  opacity: 90%;
+}
+
+.ingredient_divider_text_BORDERLESS {
+  margin-top: 0;
+}
+
+.ingredient_SearchForm_Control:focus {
+  outline: none;
+}
+
+.ingredient_inner {
+  margin: 10px;
+}
+
+.ingredient_list_container {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.ingredientAdd_list {
+  margin-top: 20px;
+  height: 76px;
+}
+
+.ingredient_divider {
+  margin: 10px;
+  width: 80vw;
+  border-top: 2px solid #424242;
+  border-radius: 1px;
+}
+
+.ingredient_toast_container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100vw;
+}
+
+.ingredient_toast {
+  position: absolute;
+  margin-top: 40px;
+  max-height: 10px;
+}
+
+.scan_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 90vh;
+  z-index: -1;
+}
+
+.search_Ingredient {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+}
+
+.sp_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 290px;
+  width: 250px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  font-family: "Montserrat", sans-serif;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.sp_card_scan_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.sp_card_scan_el {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.sp_card_scan_btn,
+.sp_card_upload_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70px;
+  background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab);
+  background-size: 350% 350%;
+  animation: gradient 12s ease infinite;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-top: auto;
+  border-bottom-right-radius: inherit;
+  border-bottom-left-radius: inherit;
+  cursor: pointer;
+}
+
+.sp_card_helper_icon {
+  position: absolute;
+  font-size: 2rem;
+  margin-left: 85%;
+}
+
+.sp_card_icon {
+  font-size: 3rem;
+  margin-top: 50px;
+}
+
+.sp_card_upload_icon {
+  font-size: 3rem;
+  margin-top: 50px;
+}
+
+.sp_card_text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  word-wrap: break-word;
+  width: 90%;
+}
+
+.sp_divider_text {
+  margin-left: 80px;
+  margin-right: 80px;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.2rem;
+  position: relative;
+  color: rgb(94, 93, 93);
+}
+
+.sp_divider_text::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: rgb(94, 93, 93);
+  position: absolute;
+  left: 150%;
+  top: 50%;
+}
+
+.sp_divider_text::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: rgb(94, 93, 93);
+  position: absolute;
+  right: 150%;
+  top: 50%;
+}
+
+@media only screen and (max-width: 660px) {
+  .scan_container {
+    flex-direction: column;
+  }
+
+  .sp_divider_text {
+    font-size: 1.2rem;
+    position: relative;
+  }
+
+  .ingredient_list {
+    width: 300px;
+    height: 250px;
+  }
+
+  .ingredientAdd_list {
+    width: 300px;
+    height: 75px;
+  }
+
+  .ingredient_divider_text {
+    margin-top: 111px;
+  }
+
+  .ingredient_divider_text,
+  .ingredient_divider_text_BORDERLESS {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+
+  .ingredient_divider_text::before,
+  .ingredient_divider_text_BORDERLESS::before {
+    left: 64%;
+  }
+
+  .ingredient_divider_text::after,
+  .ingredient_divider_text_BORDERLESS::after {
+    right: 64%;
+  }
+
+  .search_Ingredient {
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .scan_container {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100vw;
+    height: 90vh;
+  }
+
+  .sp_card {
+    height: 230px;
+    width: 190px;
+    margin: 20px;
+  }
+
+  .sp_card_text {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+
+  .sp_card_scan_btn,
+  .sp_card_upload_btn {
+    height: 100px;
+    font-size: 1.6rem;
+  }
+
+  .search_Ingredient {
+    margin-top: 5px;
+  }
+
+  .ingredient_list {
+    width: 300px;
+    height: 230px;
+  }
+
+  .ingredientAdd_list {
+    margin-top: 5px;
+    width: 300px;
+    height: 65px;
+  }
+
+  .ingredient_divider_text {
+    margin-top: 86px;
+  }
+
+  .ingredient_divider_text,
+  .ingredient_divider_text_BORDERLESS {
+    margin-bottom: 0px;
+  }
+
+  .ingredient_list_container {
+    height: 270px;
+  }
+
+  .display_btn_container {
+    margin-top: 8px;
+  }
+
+  .ingredient_divider_text::before,
+  .ingredient_divider_text_BORDERLESS::before {
+    left: 65%;
+  }
+
+  .ingredient_divider_text::after,
+  .ingredient_divider_text_BORDERLESS::after {
+    right: 65%;
+  }
+}

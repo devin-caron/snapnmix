@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap");
+
+.scan_helper_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.scan_helper_card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  width: 100%;
+  height: 200px;
+}
+
+.scan_helper_card_row_drinks,
+.scan_helper_card_row_btn {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.scan_helper_card_row_drinks {
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.scan_helper_card_row_btn {
+  font-size: 3rem;
+  margin-top: 10px;
+}
+
+.scan_display_drink_primary {
+  font-size: 4rem;
+}
+
+.scan_display_drink_secondary {
+  font-size: 3rem;
+}
+
+.scan_display_drink_tertiary {
+  font-size: 2rem;
+}
+
+.scan_helper_header {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.scan_helper_list {
+  width: 95%;
+  margin-top: 15px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+}
+
+.scan_helper_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab);
+  background-size: 350% 350%;
+  animation: gradient 12s ease infinite;
+  border: 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: none;
+  line-height: 1.5em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 4px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.scan_helper_btn:active,
+.scan_helper_btn:hover {
+  outline: 0;
+}
+
+.scan_helper_btn span {
+  background-color: #121212;
+  padding: 16px 44px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.scan_helper_btn:hover span {
+  background: none;
+}
+
+@media only screen and (min-width: 660px) {
+  .scan_helper_card {
+    height: 220px;
+  }
+
+  .scan_helper_list {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+  }
+
+  .scan_helper_list li {
+    margin: 10px;
+  }
+
+  .scan_helper_btn {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .scan_helper_header {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .scan_helper_card {
+    height: 160px;
+  }
+
+  .scan_helper_card_row_btn {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+
+  .scan_helper_list {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 0.9rem;
+  }
+}
