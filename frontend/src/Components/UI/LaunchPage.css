@@ -1,0 +1,283 @@
+*
+{
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.launchContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab);
+  background-size: 350% 350%;
+  min-height: 100vh;
+  animation: gradient 12s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.launchTitles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.8)), url("https://st3.depositphotos.com/11601342/19037/v/1600/depositphotos_190372724-stock-illustration-vector-drink-pattern-drink-seamless.jpg");
+    width: 730px;
+    height: 730px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 20px;
+  }
+
+.btn-customEnter {
+    background-color: #fe4f81 !important;
+    color: white !important;
+    font-weight: bold !important;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+}
+
+.btn-customLeave {
+    background-color: #ee7752 !important;
+    color: white !important;
+    font-weight: bold !important;
+    width: 200px;
+    margin: 20px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+}
+
+.launchTitles h1 {
+    background-color: white;
+    font-size: 58px;
+    font-weight: bold;
+    margin: 20px;
+}
+  
+.launchTitles p {
+    margin: 20px 100px 20px 100px;
+    color:red;
+    text-align:center;
+    background-color: white;
+    font-weight: 500;
+    white-space: pre-wrap;
+}
+
+.ageVeificationDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.ageVeificationDiv h2 {
+    background-color: white;
+    margin: 20px;
+}
+
+small   {
+    margin: 20px;
+    color: rgb(194, 194, 194);
+    background-color: white;
+}
+
+.decor-line {
+	position: relative;
+	top: 0.9em;
+    border-top: 1px solid rgb(136, 136, 136);
+    text-align:center;
+    align-items: center;
+    max-width: 40%;
+    display: block;
+    padding: 0.1em 1em;
+    color: #ccc;
+    background-color: white;
+}
+
+p.decor-line {
+    margin: 0;
+}
+  
+.decor-line span {
+    background-color: white;
+    background: #fff;
+    color: rgb(136, 136, 136);
+    position: relative;
+    top: -.9em;
+    padding: 0.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    .launchTitles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f2f7ff;
+        width: 450px;
+        height: 570px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 10px;
+    }
+
+    .btn-customEnter {
+        background-color: #fe4f81 !important;
+        color: white !important;
+        font-weight: bold !important;
+        width: 120px;
+        margin: 20px 20px 0px 20px;
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+    }
+    
+    .btn-customLeave {
+        background-color: #ee7752 !important;
+        color: white !important;
+        font-weight: bold !important;
+        width: 120px;
+        margin: 0px 20px 20px 20px;
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+    }
+
+    .launchTitles h1 {
+        font-size: 38px;
+        font-weight: bold;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .ageVeificationDiv h2 {
+        font-size: 28px;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .launchTitles p {
+        color:red;
+        text-align:center;
+        margin: 20px 40px 20px 40px;
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    small   {
+        margin: 20px;
+        color: rgb(194, 194, 194);
+        background-color: white;
+    }
+    
+    .decor-line {
+        position: relative;
+        top: 0.9em;
+        border-top: 1px solid rgb(136, 136, 136);
+        text-align:center;
+        align-items: center;
+        max-width: 40%;
+        display: block;
+        padding: 0.1em 1em;
+        color: #ccc;
+        background-color: white;
+    }
+
+}
+  
+  @media screen and (max-width: 480px) {
+    .launchTitles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #f2f7ff;
+        width: 330px;
+        height: 500px;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        margin: 10px;
+    }
+
+    .btn-customEnter {
+        background-color: #fe4f81 !important;
+        color: white !important;
+        font-weight: bold !important;
+        width: 100px;
+        margin: 20px 20px 0px 20px;
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+    }
+    
+    .btn-customLeave {
+        background-color: #ee7752 !important;
+        color: white !important;
+        font-weight: bold !important;
+        width: 100px;
+        margin: 0px 20px 20px 20px;
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.4);
+        text-shadow: 0px 1px 1px rgba(0,0,0,0.6);
+        z-index: 1;
+    }
+
+    .launchTitles h1 {
+        font-size: 28px;
+        font-weight: bold;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .ageVeificationDiv h2 {
+        font-size: 22px;
+        background-color: white;
+        margin: 10px;
+    }
+
+    .launchTitles p {
+        color:red;
+        text-align:center;
+        margin: 10px 30px 10px 30px;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    small  {
+        margin: 20px;
+        color: rgb(194, 194, 194);
+        background-color: white;
+    }
+    
+    .decor-line {
+        position: relative;
+        top: 0.9em;
+        border-top: 1px solid rgb(136, 136, 136);
+        text-align:center;
+        align-items: center;
+        max-width: 40%;
+        display: block;
+        padding: 0.1em 1em;
+        color: #ccc;     
+    }
+
+    p.decor-line {
+        text-decoration: none;
+    }
+}

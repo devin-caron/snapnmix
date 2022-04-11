@@ -104,9 +104,9 @@
 .cocktailAllLists{
     user-select:none;
     padding:0;
-    height:100%;
+    height:auto;
     overflow:hidden;
-    width:100%;
+    width:100vw;
 }
 
 .cocktailList {
@@ -199,6 +199,10 @@
     border-color:rgba(255, 255, 255, 0);
 }
 
+.communityContainer{
+    height:auto;
+    overflow:auto;
+}
 
 
 ul::-webkit-scrollbar{
@@ -215,6 +219,11 @@ ul::-webkit-scrollbar{
     background-color: rgba(236, 236, 236, 0.091);
   }
 @media screen and (max-width: 960px) {
+    .communityContainer{
+        height:auto;
+        overflow:auto;
+        width:100vw;
+    }
     .searchFormControl { 
         width:100%;
         margin: 0px;
@@ -239,10 +248,8 @@ ul::-webkit-scrollbar{
     
     .cocktailAllLists {
         padding:0;
-        height:100%;
-        overflow:auto;
-        width:100%;
-        margin: 0;
+        height:auto;
+        width:100vw;
     }
     
     .cocktailList {
@@ -282,7 +289,6 @@ ul::-webkit-scrollbar{
         height:auto;
         display:flex;
         overflow:auto;
-        margin-bottom: 25px;
     }
     
     .listHeader{

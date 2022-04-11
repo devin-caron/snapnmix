@@ -98,7 +98,6 @@ const Browse = (props) => {
           .then((res) => {
             if (res.data.favRecipes === undefined){
               setDisplayedFavoriteData(NO_FAVORITES);
-              postFavoritesTest();
 
             }else 
             if (res.data.success === false) {

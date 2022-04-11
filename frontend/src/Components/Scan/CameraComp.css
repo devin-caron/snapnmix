@@ -1,0 +1,27 @@
+.scan_btn {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  top: 85vh;
+  left: 50%;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.scan_camera_container video {
+  width: 100vw;
+  height: 100vh;
+}
+
+.camera_background {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(-45deg, #ee7752, #db467f, #23a6d5, #23d5ab);
+  background-size: 350% 350%;
+  animation: gradient 12s ease infinite;
+}

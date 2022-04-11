@@ -8,7 +8,7 @@ import Loading from "./Loading";
 import "../Browse/Browse.css";
 import noDrinks from "./nofavorite.jpg";
 
-const startUrl = "http://localhost:3001/";
+const startUrl = "https://sandmbackendnew.herokuapp.com/";
 
 const SearchedCocktails = (props) => {
   const [cocktailArray, setCocktailArray] = useState([]);

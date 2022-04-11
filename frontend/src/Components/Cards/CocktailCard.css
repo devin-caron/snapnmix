@@ -1,0 +1,22 @@
+*
+{
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.cocktailCard p {
+    margin-left:100px;
+}
+
+.cocktailCard h5 {
+    margin-left:100px;
+}
+
+.cocktailimg {
+    width:72px;
+    position:absolute;
+    cursor: pointer;
+}
+
